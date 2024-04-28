@@ -1,6 +1,6 @@
 {
   "name": "elevator-navigation",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "type": "module",
   "main": "./dist/es/index.js",
   "description": "提供快速实现电梯导航hooks、vue3 demo组件、开箱即用",

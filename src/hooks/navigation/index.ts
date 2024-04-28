@@ -1,5 +1,5 @@
 import { DefineContext } from '../context';
-import { effectScope, shallowRef, ref, onBeforeUnmount, watch, computed, ComputedRef } from 'vue';
+import { shallowRef, ref, onBeforeUnmount, watch, computed, ComputedRef } from 'vue';
 import { defaultScrollIntoViewOptions, ObserverInit, defaultobserverOption, defaultNavigatorOptions, NavigatorOptions } from './const';
 import { createIntersectionObserver } from '../observer';
 // @ts-ignore
@@ -21,7 +21,6 @@ export function defineNavigation(
     const _scrollIntoViewOptions = Object.assign(defaultScrollIntoViewOptions, scrollIntoViewOptions ?? {});
     const _intersectionObserverInitOptions = Object.assign(defaultobserverOption, intersectionObserverInitOptions ?? {});
     const _navigatorOptions = Object.assign(defaultNavigatorOptions, navigatorOptions ?? {});
-    const effectScopeInstance = effectScope();
     const navigatorList = shallowRef<{ text: string; bind: ComputedRef; }[]>([]);
     const activedIndex = ref(0);
     const updateIndex = ((index: number) => {
@@ -61,7 +60,8 @@ export function defineNavigation(
     onBeforeUnmount(stopWatch);
     return {
         navigatorList,
-        effectScopeInstance,
+        stopWatch,
+        updateIndex,
     }
 }
 

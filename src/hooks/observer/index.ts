@@ -27,3 +27,5 @@ export function createIntersectionObserver(target: Element, callback: (enter: In
         observer,
     };
 }
+
+export type CreateIntersectionObserver = ReturnType<typeof createIntersectionObserver>;
