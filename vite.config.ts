@@ -19,10 +19,12 @@ export default defineConfig({
       formats: ['es', 'umd', 'cjs', 'iife'],
     },
     rollupOptions: {
-      external: ['vue', 'lodash'],
+      external: ['vue', 'lodash', 'lodash-es'],
       output: {
         globals: {
           vue: 'Vue',
+          lodash: 'lodash',
+          'lodash-es': 'lodash-es',
         }
       }
     }
