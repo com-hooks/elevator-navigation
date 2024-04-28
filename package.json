@@ -1,0 +1,40 @@
+{
+  "name": "elevator-navigation",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "./dist/es/index.js",
+  "description": "提供快速实现电梯导航hooks、vue3 demo组件、开箱即用",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "电梯导航",
+    "vue",
+    "hooks"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/com-hooks/elevator-navigation.git"
+  },
+  "dependencies": {
+    "elevator-navigation": "^0.0.1",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.75.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}

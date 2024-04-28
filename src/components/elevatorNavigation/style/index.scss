@@ -1,0 +1,38 @@
+.elevator_navigation {
+    display: flex;
+    gap: 200px;
+    position: relative;
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.navigation-container {
+    position: fixed;
+    top: 0;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    .navigator-item {
+        --navigator-actived-color: rgb(14, 239, 63);
+        margin: 10px;
+        padding: 0 10px;
+        transition: color 1s;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--navigator-hover-color, var(--navigator-actived-color));
+        }
+
+        &.actived {
+            color: var(--navigator-actived-color);
+            font-weight: 600;
+        }
+    }
+}
