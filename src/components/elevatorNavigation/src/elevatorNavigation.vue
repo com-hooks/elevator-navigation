@@ -23,6 +23,3 @@ const { navigatorList } = defineNavigation(navigatorElementList);
 
 
 </script>
-<style lang="scss" scoped>
-@import url('../style/index.scss');
-</style>

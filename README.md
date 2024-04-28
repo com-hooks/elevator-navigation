@@ -68,14 +68,15 @@ import 'elevator-navigation/dist/style.css';
   </div>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import { hooks } from 'elevator-navigation';
 import 'elevator-navigation/dist/style.css';
 
 const { defineWorkContext, defineNavigation } = hooks;
-const { workContextRef, navigatorElementList } = defineWorkContext("navigation-group");
+const { workContextRef, navigatorElementList, update } = defineWorkContext(".navigation-group");
 const { navigatorList } = defineNavigation(navigatorElementList);
 const group = ref(['大黄蜂系列', '哥斯拉系列', '金刚系列', '封神榜', '坤坤', '打篮球', '唱跳rap']);
 
+onMounted(update); // 自定义触发时机
 </script>
 ```

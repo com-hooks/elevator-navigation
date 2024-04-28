@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   elevator-navigation:
-    specifier: ^0.0.4
-    version: 0.0.4(typescript@5.4.5)
+    specifier: ^0.0.7
+    version: 0.0.7(typescript@5.4.5)
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
@@ -589,6 +589,26 @@ packages:
     resolution: {integrity: sha512-B9dHC+dNc8Q0mwTxFhzSIUSkIFDOyuDrcYJAVZ8oG2xca29LrxSiUw6MGecK6rVq/v38F2O/sigGUz0Pw5kNXA==}
     dependencies:
       elevator-navigation: 0.0.1(typescript@5.4.5)
+      lodash-es: 4.17.21
+      vue: 3.4.25(typescript@5.4.5)
+    transitivePeerDependencies:
+      - typescript
+    dev: false
+
+  /elevator-navigation@0.0.6(typescript@5.4.5):
+    resolution: {integrity: sha512-ozUxNQJE6401cA5pdajjGVgNbsQt01FAHK/42imdPLixbLzXh51Za8cSc5hg954bSRnjAN/Tnx7ci0MX/wAqpQ==}
+    dependencies:
+      elevator-navigation: 0.0.4(typescript@5.4.5)
+      lodash-es: 4.17.21
+      vue: 3.4.25(typescript@5.4.5)
+    transitivePeerDependencies:
+      - typescript
+    dev: false
+
+  /elevator-navigation@0.0.7(typescript@5.4.5):
+    resolution: {integrity: sha512-2LbZXAeszqkbykGQwbbb1O+QYWJHunbP7QVmoRozq06RqCSFyYU3mkTCxYU1Y7ejYhsfdOIs5ZWaSCrjDBmXvg==}
+    dependencies:
+      elevator-navigation: 0.0.6(typescript@5.4.5)
       lodash-es: 4.17.21
       vue: 3.4.25(typescript@5.4.5)
     transitivePeerDependencies:
